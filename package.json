@@ -1,0 +1,23 @@
+{{
+  "name": "clog",
+  "version": "1.3.0",
+  "description": "clog is a secure, terminal-based note-keeping/daily-diary application — designed to give you a fast, keyboard-driven interface and complete privacy for all your data.",
+  "bin": {
+    "clog": "./bin/clog"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "keywords": ["cli", "rust", "tui", "clog"],
+  "author": "Deep Gajjar",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "tar": "^6.1.11",
+    "node-fetch": "^2.6.9",
+    "mkdirp": "^1.0.4"
+  }
+}
