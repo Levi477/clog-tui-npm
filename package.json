@@ -1,23 +1,30 @@
 {
-  "name": "clog",
+  "name": "clog-tui",
   "version": "1.3.0",
-  "description": "clog is a secure, terminal-based note-keeping/daily-diary application — designed to give you a fast, keyboard-driven interface and complete privacy for all your data.",
+  "description": "A TUI application for daily-diary and note taking built in rust.",
+  "main": "install.js",
   "bin": {
-    "clog": "./bin/clog"
+    "clog": "./bin/clog",
+    "clog-tui": "./bin/clog"
   },
   "scripts": {
     "postinstall": "node install.js"
   },
-  "keywords": ["cli", "rust", "tui", "clog"],
-  "author": "Deep Gajjar",
+  "keywords": ["tui", "rust", "terminal", "cli"],
+  "author": "Deep Gajjr",
   "license": "MIT",
-  "engines": {
-    "node": ">=14"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Levi477/clog-tui.git"
   },
-  "dependencies": {
-    "adm-zip": "^0.5.10",
-    "tar": "^6.1.11",
-    "node-fetch": "^2.6.9",
-    "mkdirp": "^1.0.4"
-  }
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": ["linux", "darwin", "win32"],
+  "cpu": ["x64", "arm64"],
+  "files": [
+    "install.js",
+    "bin/"
+  ],
+  "preferGlobal": true
 }
